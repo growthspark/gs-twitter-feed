@@ -57,11 +57,11 @@ function gs_twitter_options_init() {
 
 	add_settings_field( 'twitter_username', __( 'Username',     'growthspark' ), 'growthspark_settings_field_twitter_username', 'twitter_options', 'general' );
 
-	add_settings_field( 'loading_text', __( 'Loading Text',     'growthspark' ), 'growthspark_settings_field_loading_text', 'twitter_options', 'general' );
+	add_settings_field( 'tweet_count', __( 'Tweet Count',     'growthspark' ), 'growthspark_settings_field_tweet_count', 'twitter_options', 'general' );
 
 	add_settings_field( 'avatar_size', __( 'Avatar Size',     'growthspark' ), 'growthspark_settings_field_avatar_size', 'twitter_options', 'general' );
 
-	add_settings_field( 'tweet_count', __( 'Tweet Count',     'growthspark' ), 'growthspark_settings_field_tweet_count', 'twitter_options', 'general' );
+	add_settings_field( 'loading_text', __( 'Loading Text',     'growthspark' ), 'growthspark_settings_field_loading_text', 'twitter_options', 'general' );
 
 	add_settings_field( 'twitter_template', __( 'Template',     'growthspark' ), 'growthspark_settings_field_twitter_template', 'twitter_options', 'general' );
 
