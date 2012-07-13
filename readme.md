@@ -9,10 +9,14 @@ Powered by jQuery Tweet!, developed by Sea of Clouds: http://tweet.seaofclouds.c
 
 Settings are located under Settings -> Twitter Feed.  The following cusotimzations are permitted:
 
-* Username: The username of the twitter user to display tweets from
-* Tweet Count: Number of tweets to display in the feed
-* Avatar Size: Size of the user's avatar.  0 = no avatar
-* Loading Text: Text to display while tweets are still loading
-* Template: Allows customization of how the tweets are displayed.  Relies on the jQuery Tweet! library for permitted variables.
+**Username**: The username of the twitter user to display tweets from
+
+**Tweet Count**: Number of tweets to display in the feed
+
+**Avatar Size**: Size of the user's avatar.  0 = no avatar
+
+**Loading Text**: Text to display while tweets are still loading
+
+**Template**: Allows customization of how the tweets are displayed.  Relies on the jQuery Tweet! library for permitted variables.
 
 
