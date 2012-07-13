@@ -47,12 +47,12 @@ class GS_Twitter_Feed_Widget extends WP_Widget {
 	<!-- GS Twitter Feed Settings -->
 	<script>
 		jQuery(function($){
-	        $(".gs-twitter").tweet({
-	          avatar_size: <?php echo $option['avatar_size']; ?>,
-	          count: <?php echo $option['tweet_count']; ?>,
-	          username: "<?php echo $option['twitter_username']; ?>",
-	          loading_text: "<?php echo $option['loading_text']; ?>",
-	          template: "<?php echo $option['twitter_template']; ?>"
+	        $('.gs-twitter').tweet({
+	          avatar_size: <?php echo $option["avatar_size"]; ?>,
+	          count: <?php echo $option["tweet_count"]; ?>,
+	          username: '<?php echo $option["twitter_username"]; ?>',
+	          loading_text: '<?php echo $option["loading_text"]; ?>',
+	          template: '<?php echo $option["twitter_template"]; ?>'
 	        });
 	      });
 	</script>
@@ -77,8 +77,8 @@ class GS_Twitter_Feed_Widget extends WP_Widget {
 		if ( ! empty( $title ) )
 			echo $before_title . $title . $after_title;
 		?>
-		<div class="gs-twitter">
-		</div>
+		<div class="gs-twitter"></div>
+		<div class="gs-twiter-more"></div>
 		<?php
 		echo $after_widget;
 	}
