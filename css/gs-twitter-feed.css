@@ -1,0 +1,8 @@
+.tweet_list {
+	list-style-type: none;
+}
+
+.tweet_even,
+.tweet-odd {
+	margin: 10px 0;
+}
