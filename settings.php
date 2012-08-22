@@ -52,10 +52,10 @@ add_action( 'admin_init', 'gs_twitter_options_init' );
  * @param string $capability The capability used for the page, which is manage_options by default.
  * @return string The capability to actually use.
  */
-function growthspark_option_page_capability( $capability ) {
+function growthspark_twitter_option_page_capability( $capability ) {
 	return 'manage_options';
 }
-add_filter( 'option_page_capability_gs_twitter_options', 'growthspark_option_page_capability' );
+add_filter( 'option_page_capability_gs_twitter_options', 'growthspark_twitter_option_page_capability' );
 
 /**
  * Add our options page to the admin menu.
