@@ -126,4 +126,4 @@ class GS_Twitter_Feed_Widget extends WP_Widget {
 } // Widget class 
 
 // register the widget
-add_action( 'widgets_init', create_function( '', 'register_widget( GS_Twitter_Feed_Widget );' ) );
+add_action( 'widgets_init', create_function( '', 'register_widget( "GS_Twitter_Feed_Widget" );' ) );
