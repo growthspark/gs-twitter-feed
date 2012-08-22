@@ -5,29 +5,6 @@
  * @since Version 1.0
  */
 
-/**
- * Properly enqueue styles and scripts for our theme options page.
- *
- * This function is attached to the admin_enqueue_scripts action hook.
- *
- * @since Version 1.0
- *
- */
-function gs_twitter_enqueue_scripts( $hook_suffix ) {
-	//wp_enqueue_script('media-upload');
-	//wp_enqueue_script('thickbox');
-	//wp_enqueue_style('thickbox');
-	//wp_enqueue_script( 'gs-custom-logo', get_template_directory_uri() . '/js/logo-uploader.js', array('media-upload', 'thickbox'), '1', false );
-}
-add_action( 'admin_print_styles-appearance_page_logo_options', 'gs_twitter_enqueue_scripts' );
-
-function gs_twitter_enqueue_scripts_2( $hook_suffix ){
-
-	//wp_enqueue_style('gs-custom-logo-styles',  get_template_directory_uri() . '/css/logo-uploader.css', array(), '1.1', 'all');
-
-}
-add_action('admin_head-media-upload-popup','gs_twitter_enqueue_scripts_2');
-
 
 /**
  * Register the form setting for our options array.
