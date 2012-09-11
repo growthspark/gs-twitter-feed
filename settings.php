@@ -15,12 +15,12 @@
 function gs_twitter_options_init() {
 
 	// If we have no options in the database, let's add them now.
-	if ( false === growthspark_get_logo_options() )
+	if ( false === growthspark_get_twitter_options() )
 		add_option( 'gs_twitter_options', growthspark_get_default_logo_options() );
 
 	register_setting(
 		'gs_twitter_options',       // Options group, see settings_fields() call in gs_twitter_options_render_page()
-		'gs_twitter_options', // Database option, see growthspark_get_logo_options()
+		'gs_twitter_options', // Database option, see growthspark_get_twitter_options()
 		'gs_twitter_options_validate' // The sanitization callback, see gs_twitter_options_validate()
 	);
 
@@ -103,7 +103,7 @@ function growthspark_get_default_logo_options() {
  *
  * @since Version 1.0
  */
-function growthspark_get_logo_options() {
+function growthspark_get_twitter_options() {
 	return get_option( 'gs_twitter_options', growthspark_get_default_logo_options() );
 }
 
@@ -114,7 +114,7 @@ function growthspark_get_logo_options() {
  * 
  */
 function growthspark_settings_field_twitter_username() {
-	$options = growthspark_get_logo_options();
+	$options = growthspark_get_twitter_options();
 
 			// Sanitize
 			$id = 'twitter_username';
@@ -134,7 +134,7 @@ function growthspark_settings_field_twitter_username() {
  * 
  */
 function growthspark_settings_field_tweet_count() {
-	$options = growthspark_get_logo_options();
+	$options = growthspark_get_twitter_options();
 
 			// Sanitize
 			$id = 'tweet_count';
@@ -153,7 +153,7 @@ function growthspark_settings_field_tweet_count() {
  * 
  */
 function growthspark_settings_field_avatar_size() {
-	$options = growthspark_get_logo_options();
+	$options = growthspark_get_twitter_options();
 
 			// Sanitize
 			$id = 'avatar_size';
@@ -174,7 +174,7 @@ function growthspark_settings_field_avatar_size() {
  * 
  */
 function growthspark_settings_field_loading_text() {
-	$options = growthspark_get_logo_options();
+	$options = growthspark_get_twitter_options();
 
 			// Sanitize
 			$id = 'loading_text';
@@ -194,7 +194,7 @@ function growthspark_settings_field_loading_text() {
  * 
  */
 function growthspark_settings_field_twitter_template() {
-	$options = growthspark_get_logo_options();
+	$options = growthspark_get_twitter_options();
 
 			// Sanitize
 			$id = 'twitter_template';
