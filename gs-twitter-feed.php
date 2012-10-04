@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: GS Twitter Feed
+Plugin Name: Growth Spark Twitter Feed
 Plugin URI: http://www.growthspark.com
 Description: Enables a Twitter Feed widget for displaying the latest tweets from a Twitter account.
 Author: Growth Spark
