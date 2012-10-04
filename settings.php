@@ -16,7 +16,7 @@ function gs_twitter_options_init() {
 
 	// If we have no options in the database, let's add them now.
 	if ( false === growthspark_get_twitter_options() )
-		add_option( 'gs_twitter_options', growthspark_get_default_logo_options() );
+		add_option( 'gs_twitter_options', growthspark_get_default_twitter_options()  );
 
 	register_setting(
 		'gs_twitter_options',       // Options group, see settings_fields() call in gs_twitter_options_render_page()
@@ -86,8 +86,8 @@ add_action( 'admin_menu', 'gs_twitter_options_add_page' );
  *
  * @since Version 1.0
  */
-function growthspark_get_default_logo_options() {
-	$default_logo_options = array(
+function growthspark_get_default_twitter_options()  {
+	$default_twitter_options = array(
 		'twitter_username' => 'growthspark',
 		'tweet_count' => 3,
 		'loading_text' => 'loading tweets...',
@@ -95,7 +95,7 @@ function growthspark_get_default_logo_options() {
 		'twitter_template' => '{avatar}{time}{join}{text}'
 	);
 
-	return apply_filters( 'growthspark_default_logo_options', $default_logo_options );
+	return apply_filters( 'growthspark_default_twitter_options', $default_twitter_options );
 }
 
 /**
@@ -104,7 +104,7 @@ function growthspark_get_default_logo_options() {
  * @since Version 1.0
  */
 function growthspark_get_twitter_options() {
-	return get_option( 'gs_twitter_options', growthspark_get_default_logo_options() );
+	return get_option( 'gs_twitter_options', growthspark_get_default_twitter_options()  );
 }
 
 
@@ -219,7 +219,7 @@ function gs_twitter_options_render_page() {
 	?>
 	<div class="wrap">
 		<?php screen_icon(); ?>
-		<h2><?php printf( __( 'Twitter Feed', 'growthspark' ), get_current_theme() ); ?></h2>
+		<h2>Twitter Feed</h2>
 		<?php settings_errors(); ?>
 
 		<form method="post" action="options.php">
@@ -239,7 +239,7 @@ function gs_twitter_options_render_page() {
  * @since Version 1.0
  */
 function gs_twitter_options_validate( $input ) {
-	$output = $defaults = growthspark_get_default_logo_options();
+	$output = $defaults = growthspark_get_default_twitter_options() ;
 
 	$output['twitter_username'] = $input['twitter_username'];
 	$output['tweet_count'] = intval($input['tweet_count']);
